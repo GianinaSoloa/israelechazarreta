@@ -160,14 +160,6 @@ function noResults(){
 
 // Función de cada búsqueda
 
-/* function kindFilter(property) {
-    if(datosBusqueda.kind){
-        return property.kind === datosBusqueda.kind;
-    }
-    return property;
-
-} */
-
 function kindFilter(property) {
     if(datosBusqueda.kind){
         return property.kind === datosBusqueda.kind;
@@ -175,6 +167,7 @@ function kindFilter(property) {
     return property;
 
 }
+
 
 function cityFilter(property) {
     if(datosBusqueda.city){
