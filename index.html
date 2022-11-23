@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos Israel Echazarreta Propiedades, tu inmobiliaria de confianza. Encontrá todas las Propiedades en Venta y Alquiler en Gualeguaychú Entrre Ríos y alrededores. ">
+    <meta name="keywords" content="Desarrollos inmobiliarios en Gualeguaychú y alrededores, Casas en Venta Gualeguaychú, Casas en alquiler Gualeguaychú, propiedades en venta y alquiler Gualeguaychú y alrededores, alquileres Gualeguaychú, Loteos Gualeguaychú, venta de casas Entre Ríos, alquiler de departamentos Entre Ríos,">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link rel="shortcut icon" href="images/icono-ie.png"> <!-- FAVICON -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> <!-- BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- CSS --> 
+    <title>Israel Echazarreta Propiedades - Home</title>
+</head>
+<body id="top">
+    <header>
+    <!-- MENU -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <a href="index.html"><img src="images/icono-ie.png" alt="Logo Israel Echazarreta" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PROPIEDADES <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="html/proyectos.html">VER TODAS</a></li>
+                        <li><a class="dropdown-item" href="html/venta.html">EN VENTA</a></li>
+                        <li><a class="dropdown-item" href="html/alquiler.html">EN ALQUILER</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/quienessomos.html">QUIÉNES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/contacto.html">CONTACTO</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>  
+    </header>
+    <!-- CAROUSEL -->
+    <section class="carousel__banners">
+        <div id="carouselExampleInterval carousel__banners" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="images/slider-1.png" class="d-block w-100" alt="Imagen 1 Slider Home - Israel Echazarreta Propiedades">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/slider-2.png" class="d-block w-100" alt="Imagen 2 Slider Home - Israel Echazarreta Propiedades">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/slider-3.png" class="d-block w-100" alt="Imagen 3 Slider Home - Israel Echazarreta Propiedades">
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" href="#carouselExampleInterval" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" href="#carouselExampleInterval" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button> -->
+        </div>
+    </section>
+    <div class="search">
+        <form>
+            <div class="kind__property selector">
+                <p>BUSCAR POR</p>
+                <select class="kind">
+                    <option value="Venta" selected>Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="AlquilerTemporal">Alquiler temporal</option>
+                </select> 
+            </div>
+            <div class="city__property selector">
+                <p>LOCALIDAD</p>
+                <select class="city">
+                    <option value="">Seleccione</option>
+                    <option value="Gualeguaychu">Gualeguaychú</option>
+                    <option value="Gualeguay">Gualeguay</option>
+                    <option value="LaPlata">La Plata</option>
+                </select> 
+            </div>
+            <div class="type__property selector">
+                <p>TIPO DE PROPIEDAD</p>
+                <select class="type">
+                    <option value="">Seleccione</option>
+                    <option value="Casa">Casa</option>
+                    <option value="CasaCampo">Casa de campo</option>
+                    <option value="Departamento">Departamento</option>
+                    <option value="Cabana">Cabaña</option>
+                    <option value="Terreno">Terreno</option>
+                </select> 
+            </div>
+            <div class="rooms__property selector">
+                <p>HABITACIONES</p>
+                <select class="rooms">
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select> 
+            </div>
+            <div class="budget__property selector">
+                <p>PRECIO MÍNIMO (USD)</p>
+                <select class="min">
+                    <option value="">Seleccione</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="5000">5.000</option>
+                    <option value="10000">10.000</option>
+                    <option value="20000">20.000</option>
+                    <option value="30000">30.000</option>
+                    <option value="40000">40.000</option>
+                    <option value="50000">50.000</option>
+                    <option value="60000">60.000</option>
+                    <option value="70000">70.000</option>
+                    <option value="80000">80.000</option>
+                    <option value="90000">90.000</option>
+                    <option value="100000">100.000</option>
+                    <option value="200000">200.000</option>
+                    <option value="300000">300.000</option>
+                    <option value="400000">400.000</option>
+                    <option value="500000">500.000</option>
+                </select>
+            </div>
+            <div class="budget__property selector">
+                <p>PRECIO MÁXIMO (USD)</p>
+                <select class="max">
+                    <option value="">Seleccione</option>
+                    <option value="300">300</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="2000">2000</option>
+                    <option value="5000">5.000</option>
+                    <option value="10000">10.000</option>
+                    <option value="20000">20.000</option>
+                    <option value="30000">30.000</option>
+                    <option value="40000">40.000</option>
+                    <option value="50000">50.000</option>
+                    <option value="60000">60.000</option>
+                    <option value="70000">70.000</option>
+                    <option value="80000">80.000</option>
+                    <option value="90000">90.000</option>
+                    <option value="100000">100.000</option>
+                    <option value="200000">200.000</option>
+                    <option value="300000">300.000</option>
+                    <option value="400000">400.000</option>
+                    <option value="500000">500.000</option>
+                </select>
+            </div>
+            <div class="search__button selector">
+                <button class="button__search searchButton" type="submit">BUSCAR</button>
+            </div>
+        </form>
+    </div>
+    <main>
+        <section class="properties"> 
+            <h1>ISRAEL ECHAZARRETA PROPIEDADES</h1>
+            <h2>descubra todas las propiedades destacadas que tenemos para ofrecerle</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card col-md-4">
+                                <p class="sign">VENTA</p>
+                                <img class="card-img-top" src="images/prop-1.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casa en venta Gualeguaychú</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="card-info">
+                                        <i class="fa-solid fa-bed"></i><p>1</p>
+                                        <i class="fa-solid fa-bath"></i><p>1</p>
+                                        <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="card col-md-4">
+                                <p class="sign">VENTA</p>
+                                <img class="card-img-top" src="images/prop-2.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casa en venta Gualeguaychú</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="card-info">
+                                        <i class="fa-solid fa-bed"></i><p>1</p>
+                                        <i class="fa-solid fa-bath"></i><p>1</p>
+                                        <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="card col-md-4">
+                                <p class="sign">ALQUILER</p>
+                                <img class="card-img-top" src="images/prop-3.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                                <div class="card-body">
+                                    <h5 class="card-title">Casa en alquiler Gualeguaychú</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="card-info">
+                                        <i class="fa-solid fa-bed"></i><p>1</p>
+                                        <i class="fa-solid fa-bath"></i><p>1</p>
+                                        <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card col-md-4">
+                            <p class="sign">VENTA</p>
+                            <img class="card-img-top" src="images/prop-1.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa a estrenar en venta</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <p class="sign">ALQUILER</p>
+                            <img class="card-img-top" src="images/prop-2.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa en alquiler Gualeguay</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <p class="sign">VENTA</p>
+                            <img class="card-img-top" src="images/prop-3.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa en venta oportunidad</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card col-md-4">
+                            <p class="sign">ALQUILER</p>
+                            <img class="card-img-top" src="images/prop-3.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa en alquiler Gualeguaychú</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <p class="sign">ALQUILER</p>
+                            <img class="card-img-top" src="images/prop-2.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Departamento en alquiler Gualeguay</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <p class="sign">ALQUILER</p>
+                            <img class="card-img-top" src="images/prop-3.png" alt="Propiedades disponibles - Israel Echazarreta Propiedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Casa en alquiler Gualeguaychú</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-info">
+                                    <i class="fa-solid fa-bed"></i><p>1</p>
+                                    <i class="fa-solid fa-bath"></i><p>1</p>
+                                    <i class="fa-solid fa-ruler"></i><p>1500m2</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>        
+        <section class="form__container">
+            <h2>CONTACTANOS</h2>
+            <h3>estaremos encantados de poder ayudarte</h3>
+            <form class="form__general" id="form__home">
+                <input type="text" name="name" placeholder="NOMBRE COMPLETO" required>
+                <input type="email" name="email" placeholder="EMAIL" required>
+                <select name="asunto">
+                    <option disabled selected>ASUNTO</option>
+                    <option value="value1">VENTA</option>
+                    <option value="value2">ALQUILER</option>
+                    <option value="value3">QUIERO VENDER/ALQUILAR</option>
+                    <option value="value4">OTRO</option>
+                </select>   
+                <textarea name="coment" cols="30" rows="10" placeholder="COMENTARIO" required></textarea>
+                <input class="button__form" type="submit" value="ENVIAR">
+            </form>
+        </section>
+    </main>    
+    <footer>
+        <div class="footer__container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-ie.png" alt="Logo Israel Echazarreta"></a>
+            </div>
+            <div class="contact">
+                <h5>CONTACTO</h5>   
+                <p><i class="fa-brands fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=+541164872611&text=Hola!%20ingres%C3%A9%20a%20la%20web%20de%20Israel%20Echazarreta%20propiedades." target="blank_">11.6487.2611</a></p>
+                <p><i class="fa-regular fa-envelope"></i><a href="mailto:israelechazarreta@hotmail.com" target="blank_">israelechazarreta@hotmail.com</a></p>
+                <p><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/israelechazarreta/" target="blank_">/israelechazarreta</a></p>
+                <!-- <p><i class="fa-solid fa-location-dot"></i> Gualeguaychú, Entre Ríos.</p> -->
+            </div>
+        </div>    
+        <div id="whatsapp">
+            <a class="btn__whatsapp" href="https://api.whatsapp.com/send?phone=+541164872611&text=Hola!%20ingres%C3%A9%20a%20la%20web%20de%20Israel%20Echazarreta%20propiedades." target="blank_"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div id="arriba">
+            <a href="#top" title="Ir arriba"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+<script src="https://kit.fontawesome.com/35dbebc5d1.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="js/index.js"></script> <!-- JS --> 
+<script src="js/data.js"></script> <!-- JS --> 
+</body>
+</html>

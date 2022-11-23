@@ -1,0 +1,556 @@
+
+/* GENERALES */
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    height: 100%; 
+}
+
+body {
+    min-height: 100%; 
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #9a999e; 
+}
+
+
+/* HEADER */
+
+nav img{
+    width: 30%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    padding: 0 5%;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #004c7d;
+}
+
+a.active{
+    color: #004c7d;
+    font-weight: 700;
+}
+
+.dropdown-toggle::after {
+    border-width: 2px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #004c7d;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    width: 85%;
+}
+
+
+ul li a{
+    position: relative;
+    font-weight:bold;
+    color:#004c7d;
+    margin: 0px 5px;
+}
+
+ul li a:after{
+    content: "";
+    background-color: #004c7d;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30%;
+    height: 2px;
+    opacity: 0;
+    transition: width ease-in-out 2s;        
+}
+
+ul li a:hover:after{
+    opacity:1;
+    transform: translateY(15px)
+}
+
+/* CAROUSEL */
+
+#carouselExampleInterval\ carousel__banners {
+    z-index: -1;
+}
+
+.carousel, .carousel-inner {
+    height: 550px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 7%;
+}
+
+/* SEARCH */
+
+.search{
+    width: 80%;
+    background-color: #ffffff;
+    padding: 4%;
+    border-radius: 4px;
+    box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 10%);
+    margin: -60px auto;
+}
+
+.search textarea, .search select, .search input {
+    width: 130px;
+    padding: 4%;
+    margin: 1% 0;
+    color: #9a999e;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #9a999e;
+    border-radius: 3px;
+}
+
+.selector{
+    margin: 0 1%;
+}
+
+.search p{
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.search form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.button__search{
+    width: 160px;
+    border: none;
+    height: 33px;
+    border-radius: 4px;
+    background-color: #004c7d;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.button__search:hover{
+    background-color: #001a2f;
+}
+
+/* PROPERTIES */
+
+.properties{
+    padding: 10% 0;
+}
+
+.properties h1{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.properties h2{
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.sign{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    color: #ffffff;
+    background-color: #004c7d;
+    padding: 2%;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 7%;
+}
+
+.card{
+    margin: 1% 1%;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: all 1s;
+}
+
+.card-body h5{
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.card-info{
+    display: flex;
+}
+
+.card-info i{
+    margin-right: 2%;
+}
+
+.card-info p{
+    margin-right: 5%;
+}
+
+.carousel-control {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 2%;
+}
+
+/* FORMULARIO */
+
+.form__container{
+    background-image: url("../images/parallax3.png");
+    min-height: 680px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form__container h2{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 5%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form__container h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 3%;
+}
+
+.form__general{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.form__general input, .form__general textarea, .form__general select {
+    padding: 11px;
+    margin: 1% 0;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+
+::placeholder {
+    color: #ffffff;
+}
+
+:focus-visible {
+    outline: #004c7d auto 1px;
+}
+
+.button__form{
+    font-size: 14px;
+}
+
+.form__general input.button__form:hover{
+    background-color: #ffffff;
+    color: #004c7d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* FOOTER */
+
+.footer__container{
+    background-color: #f5f4f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.logo{
+    width: 30%;
+    margin: 0 5%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.contact{
+    margin: 0 5%;
+    width: 250px;
+}
+
+.contact h5{
+    font-weight: 700;
+    margin: 11% 0;
+}
+
+.contact i{
+    font-size: 19px;
+    color: #004c7d;
+    margin-right: 3%;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #9a999e;
+}
+
+.contact a:hover{
+    color: #004c7d;
+}
+
+/* WHATSAPP */
+
+.btn__whatsapp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 45px;
+    right: 20px;
+    background-color: #0df053;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.btn__whatsapp:hover{
+    border: 3px solid #ffffff;
+}
+
+#whatsapp i{
+    font-size: 23px;
+    color: #ffffff;
+}
+
+/* IR ARRIBA */
+
+#arriba {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 600; 
+}
+
+#arriba a {
+    text-decoration: none;
+    border: 0 none;
+    display: block;
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    background: #204d7d;
+    color: #ffffff;
+    transition: all 0.3s; 
+}
+
+#arriba a i {
+    font-size: 1rem;
+    line-height: inherit; 
+}
+
+#arriba a:hover {
+    background: #052032; 
+}
+
+/* HTML VENTA */
+
+.title{
+    text-align: center;
+    margin: 4% 0;
+}
+
+.title h1{
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title h2{
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.search__properties{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.search__widget{
+    width: 25%;
+    margin-top: 3%;
+}
+
+#results{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search__widget textarea, .search__widget select, .search__widget input {
+    width: 80%;
+    padding: 4%;
+    color: #9a999e;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #9a999e;
+    border-radius: 3px;
+    margin-bottom: 10%;
+}
+
+.search__widget p{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.search__widget .vertical__button {
+    width: 80%;
+    border: none;
+    height: 43px;
+}
+
+.vertical__button{
+    background-color: #004c7d;
+    color: #ffffff;
+    padding: 4%;
+    border-radius: 4px;
+}
+
+.vertical__button:hover{
+    background-color: #001a2f;
+}
+
+.no__results{
+    margin-top: 10%;
+    font-size: 18px;
+}
+
+/* HTML QUIÉNES SOMOS */
+
+.aboutus__image img{
+    width: 100%;
+}
+
+.aboutus{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.values__container{
+    margin-top: 7%;
+    padding: 7% 0;
+    background-color: #004c7d;
+}
+
+.values__container h2{
+    text-align: center;
+    font-size: 33px;
+    color: #ffffff;
+}
+
+.values__general{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 15%;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3%;
+}
+
+.values img{
+    width: 25%;
+    margin: 15% 0;
+}
+
+.values h3{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.info__values{
+    text-align: center;
+    color: #ffffff;
+}
+
+/* HTML CONTACTO */
+
+.title__contact{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.title__contact h1{
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.title__contact h1{
+    font-size: 33px;
+}
+
+.title__contact h3{
+    font-size: 17px;
+}

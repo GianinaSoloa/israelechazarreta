@@ -1,0 +1,156 @@
+const properties = [
+    {
+        id: "Propiedad 000-001", 
+        kind: "Alquiler", 
+        city: "Gualeguaychu", 
+        type: "Departamento", 
+        description: "Departamento muy cómodo en primer piso al frente. Espacios amplios. Cocina con barra. Living Comedor. 1 dormitorio. Baño completo. Balcón a la calle.",
+        rooms: 1,
+        baths: 1,
+        budget: 300, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-002", 
+        kind: "Alquiler", 
+        city: "Gualeguaychu", 
+        type: "Departamento", 
+        description: "Departamento muy cómodo en cuarto piso al frente. Espacios amplios. Cocina equipada. Living Comedor. 2 dormitorios. Uno al frente, el otro interno. Baño completo. Toilette.",
+        rooms: 2,
+        baths: 2,
+        budget: 500, 
+        img: "../images/prop-2.png"
+    },
+    {
+        id: "Propiedad 000-003", 
+        kind: "Alquiler", 
+        city: "Gualeguaychu", 
+        type: "Casa", 
+        description: "Hermosa casa desarrollada toda en planta baja. Consta de un gran living comedor, estar, sala de juegos, amplia cocina equipada, lavadero, baño completo, 3 habitaciones (1 en suite con baño), parrilla y piscina.",
+        rooms: 3,
+        baths: 2,
+        budget: 2500, 
+        img: "../images/prop-3.png"
+    },
+    {
+        id: "Propiedad 000-004", 
+        kind: "Alquiler", 
+        city: "Gualeguay", 
+        type: "Departamento", 
+        description: "Departamento muy cómodo tercer piso interno. Espacios amplios. Cocina integrada al Living Comedor. 2 dormitorios. Baño completo. Balcón a la calle.",
+        rooms: 2,
+        baths: 2,
+        budget: 250, 
+        img: "../images/prop-3.png"
+    },
+    {
+        id: "Propiedad 000-005", 
+        kind: "Alquiler", 
+        city: "Gualeguay", 
+        type: "Departamento", 
+        description: "Departamento muy cómodo en primer piso al frente. Espacios amplios. Cocina con barra. Living Comedor. 2 dormitorios. Uno al frente, el otro interno. Baño completo. Balcón a la calle.",
+        rooms: 2,
+        baths: 2,
+        budget: 300, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-006", 
+        kind: "Alquiler", 
+        city: "Gualeguay", 
+        type: "Casa", 
+        description: "Excelente casa amueblada, desarrollada toda en planta baja. Cuenta con cocina integrada, 2 dormitorios con placard, quincho con parrilla, 2 baños completos, lavadero separado. Depósito de alimentos. Piscina. Calefacción central frío-calor.",
+        rooms: 3,
+        baths: 2,
+        budget: 3000, 
+        img: "../images/prop-2.png"
+    },
+    {
+        id: "Propiedad 000-007", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Departamento", 
+        description: "Departamento muy cómodo en primer piso al frente. Espacios amplios. Cocina con barra. Living Comedor. 1 dormitorio. Baño completo. Balcón a la calle.",
+        rooms: 1,
+        baths: 2,
+        budget: 180000, 
+        img: "../images/prop-3.png"
+    },
+    {
+        id: "Propiedad 000-008", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Departamento", 
+        description: "Departamento sexto piso interno. Espacios amplios. Cocina con barra. Living Comedor. 2 dormitorios. Baño completo. Toilette. Amenities.",
+        rooms: 1,
+        baths: 1, 
+        budget: 250000, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-009", 
+        kind: "Venta", 
+        city: "Gualeguaychu", 
+        type: "Departamento", 
+        description: "Hermosa casa desarrollada toda en planta baja. Living comedor, estar, sala de juegos, amplia cocina equipada, lavadero, baño completo, 3 habitaciones (1 en suite con baño), parrilla y piscina.",
+        rooms: 2,
+        baths: 2,
+        budget: 310000, 
+        img: "../images/prop-3.png"
+    },
+    {
+        id: "Propiedad 000-010", 
+        kind: "Venta", 
+        city: "Gualeguaychu", 
+        type: "Casa", 
+        description: "Casa dos plantas. 3 dormitorios. Baño completo. Toilette. Living comedor con hogar. Cocina separada. Patio con piscina y parrilla cubierta.",
+        rooms: 3,
+        baths: 2,
+        budget: 370000, 
+        img: "../images/prop-2.png"
+    },
+    {
+        id: "Propiedad 000-011", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Casa", 
+        description: "Casa minimalista de dos plantas. En planta baja amplio estar/comedor con un sector de lectura y una estufa hogar. Cocina con isla y muebles integrados completos. Lavadero y toilette. Habitación de huéspedes o tercer dormitorio con baño completo. Cochera semicubierta, quincho con baño completo y habitación de servicio. Parrilla cubierta, piscina y amplio parque. En la planta alta se encuentra un dormitorio con baño completo y el segundo dormitorio completo, con vestidor y baño en suite.",
+        rooms: 4,
+        baths: 3,
+        budget: 400000, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-012", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Casa", 
+        description: "PH al frente, dos dormitorios, dos baños, amplia cocina comdor con muebles sobre y bajo mesada, lavadero separado, con patio , parrilla y garage.",
+        rooms: 2,
+        baths: 1,
+        budget: 200000, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-013", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Casa", 
+        description: "Casa dos plantas, con jardín. 2 dormitorios. 2 baños. Living. Cocina separada. Comedor diario. Buena iluminación.",
+        rooms: 2,
+        baths: 1,
+        budget: 310000, 
+        img: "../images/prop-1.png"
+    },
+    {
+        id: "Propiedad 000-014", 
+        kind: "Venta", 
+        city: "Gualeguay", 
+        type: "Casa", 
+        description: "Casa dos plantas. 3 dormitorios. Baño completo. Toilette. Living comedor con hogar. Cocina separada. Patio con piscina y parrilla cubierta.",
+        rooms: 3,
+        baths: 1, 
+        budget: 330000, 
+        img: "../images/prop-1.png"
+    },
+]
