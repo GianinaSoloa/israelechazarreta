@@ -168,7 +168,6 @@ function kindFilter(property) {
 
 }
 
-
 function cityFilter(property) {
     if(datosBusqueda.city){
         return property.city === datosBusqueda.city;
