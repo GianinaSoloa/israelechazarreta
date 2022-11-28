@@ -36,6 +36,7 @@
                         <li><a class="dropdown-item" href="html/proyectos.html">VER TODAS</a></li>
                         <li><a class="dropdown-item" href="html/venta.html">EN VENTA</a></li>
                         <li><a class="dropdown-item" href="html/alquiler.html">EN ALQUILER</a></li>
+                        <li><a class="dropdown-item" href="html/alquilertemporal.html">ALQUILER TEMPORAL</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -72,10 +73,10 @@
         </div>
     </section>
     <div class="search">
-        <form>
+        <form id="search__home">
             <div class="kind__property selector">
                 <p>BUSCAR POR</p>
-                <select class="kind">
+                <select id="kind">
                     <option value="Venta" selected>Venta</option>
                     <option value="Alquiler">Alquiler</option>
                     <option value="AlquilerTemporal">Alquiler temporal</option>
@@ -83,7 +84,7 @@
             </div>
             <div class="city__property selector">
                 <p>LOCALIDAD</p>
-                <select class="city">
+                <select id="city">
                     <option value="">Seleccione</option>
                     <option value="Gualeguaychu">Gualeguaychú</option>
                     <option value="Gualeguay">Gualeguay</option>
@@ -92,7 +93,7 @@
             </div>
             <div class="type__property selector">
                 <p>TIPO DE PROPIEDAD</p>
-                <select class="type">
+                <select id="type">
                     <option value="">Seleccione</option>
                     <option value="Casa">Casa</option>
                     <option value="CasaCampo">Casa de campo</option>
@@ -103,7 +104,7 @@
             </div>
             <div class="rooms__property selector">
                 <p>HABITACIONES</p>
-                <select class="rooms">
+                <select id="rooms">
                     <option value="">Seleccione</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -114,7 +115,7 @@
             </div>
             <div class="budget__property selector">
                 <p>PRECIO MÍNIMO (USD)</p>
-                <select class="min">
+                <select id="min">
                     <option value="">Seleccione</option>
                     <option value="200">200</option>
                     <option value="300">300</option>
@@ -140,7 +141,7 @@
             </div>
             <div class="budget__property selector">
                 <p>PRECIO MÁXIMO (USD)</p>
-                <select class="max">
+                <select id="max">
                     <option value="">Seleccione</option>
                     <option value="300">300</option>
                     <option value="500">500</option>

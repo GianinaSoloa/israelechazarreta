@@ -1,28 +1,63 @@
 
-const buttonHome = document.querySelector('#search__home');
 const results = document.querySelector('#results');
-const kind = document.querySelector('#kind').value;
-const city = document.querySelector('#city').value;
-const type = document.querySelector('#type').value;
-const rooms = document.querySelector('#rooms').value;
-const min = document.querySelector('#min').value;
-const max = document.querySelector('#max').value;
 
-buttonHome.addEventListener("submit", (e) => {
-    e.preventDefault();
-    if(kind === 'Venta'){
-        window.location.href = 'html/venta.html';
-        filterProperties();
-        
-    } else if (kind === 'Alquiler'){
-        window.location.href = 'html/alquiler.html';
-        filterProperties();
-    } else if (kind === 'Alquiler temporal'){
-        window.location.href = 'html/alquilertemporal.html';
-        filterProperties();
-    }
-})
+// Variables buscador
+const search = document.querySelector('#searchButton');
+const kind = document.querySelector('#kind');
+const city = document.querySelector('#city');
+const type = document.querySelector('#type');
+const rooms = document.querySelector('#rooms');
+const min = document.querySelector('#min');
+const max = document.querySelector('#max');
 
+
+const datosBusqueda = {
+    kind:'',
+    city:'',
+    type:'',
+    rooms:'',
+    min:'',
+    max:'',
+}
+
+
+// Event Listener de todos los select del formulario de búsqueda
+
+    kind.addEventListener('change', e => {
+        datosBusqueda.kind = e.target.value;
+        filterProperties();
+    })
+
+    city.addEventListener('change', e => {
+        datosBusqueda.city = e.target.value;
+        filterProperties();
+    })
+    
+    type.addEventListener('change', e => {
+        datosBusqueda.type = e.target.value;
+        filterProperties();
+    })
+    
+    rooms.addEventListener('change', e => {
+        datosBusqueda.rooms = parseInt(e.target.value);
+        filterProperties();
+    })
+    
+    min.addEventListener('change', e => {
+        datosBusqueda.min = parseInt(e.target.value);
+        filterProperties();
+    })
+    
+    max.addEventListener('change', e => {
+        datosBusqueda.max = parseInt(e.target.value);
+        filterProperties();
+    })
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        showProperties(properties);
+    })
+
+// Función que muestra las propiedades
 
 function showProperties(properties) {
     deleteHTML();
@@ -101,13 +136,17 @@ function deleteHTML() {
 
 function filterProperties() {
     const results = properties.filter(kindFilter).filter(cityFilter).filter(typeFilter).filter(roomsFilter).filter(minFilter).filter(maxFilter)
-    if(results.length){
-        showProperties(results);   
-    }else{
-    noResults();
-    }
-    
+
+    search.addEventListener('click', (e) => {
+        e.preventDefault();
+        if(results.length){
+            showProperties(results);   
+        }else{
+        noResults();
+        }
+    })
 }
+
 
 // Función cuando no hay resultados
 
@@ -122,44 +161,44 @@ function noResults(){
 // Función de cada búsqueda
 
 function kindFilter(property) {
-    if(kind){
-        return property.kind === kind;
+    if(datosBusqueda.kind){
+        return property.kind === datosBusqueda.kind;
     }
     return property;
 
 } 
 
 function cityFilter(property) {
-    if(city){
-        return property.city === city;
+    if(datosBusqueda.city){
+        return property.city === datosBusqueda.city;
     }
     return property;
 }
 
 function typeFilter(property) {
-    if(type){
-        return property.type === type;
+    if(datosBusqueda.type){
+        return property.type === datosBusqueda.type;
     }
     return property;
 }
 
 function roomsFilter(property) {
-    if(rooms){
-        return property.rooms === rooms;
+    if(datosBusqueda.rooms){
+        return property.rooms === datosBusqueda.rooms;
     }
     return property;
 }
 
 function minFilter(property) {
-    if(min){
-        return property.budget >= min;
+    if(datosBusqueda.min){
+        return property.budget >= datosBusqueda.min;
     }
     return property;
 }
 
 function maxFilter(property) {
-    if(max){
-        return property.budget <= max;
+    if(datosBusqueda.max){
+        return property.budget <= datosBusqueda.max;
     }
     return property;
 }
